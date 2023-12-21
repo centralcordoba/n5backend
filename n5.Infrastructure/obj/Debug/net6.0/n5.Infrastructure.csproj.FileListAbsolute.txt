@@ -1,0 +1,15 @@
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\bin\Debug\net6.0\n5.Infrastructure.deps.json
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\bin\Debug\net6.0\n5.Infrastructure.dll
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\bin\Debug\net6.0\n5.Infrastructure.pdb
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\bin\Debug\net6.0\n5.Domain.dll
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\bin\Debug\net6.0\n5.Domain.pdb
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\n5.Infrastructure.csproj.AssemblyReference.cache
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\n5.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\n5.Infrastructure.AssemblyInfoInputs.cache
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\n5.Infrastructure.AssemblyInfo.cs
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\n5.Infrastructure.csproj.CoreCompileInputs.cache
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\n5.Infrastructure.csproj.CopyComplete
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\n5.Infrastructure.dll
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\refint\n5.Infrastructure.dll
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\n5.Infrastructure.pdb
+C:\repo\githubworkflowB\n5backend\n5.Infrastructure\obj\Debug\net6.0\ref\n5.Infrastructure.dll

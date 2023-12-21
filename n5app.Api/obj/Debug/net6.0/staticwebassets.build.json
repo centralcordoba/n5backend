@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "t4eNBplhr9QDGtTYmUJRQ5+YooUSW8AAdch3TqIPcxQ=",
+  "Source": "n5app.Api",
+  "BasePath": "_content/n5app.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

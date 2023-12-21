@@ -1,0 +1,330 @@
+2023-12-19 11:32:54.137 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-19 11:32:54.163 -03:00 [INF] Hosting environment: Development
+2023-12-19 11:32:54.166 -03:00 [INF] Content root path: C:\repo\githubworkflowB\n5backend\n5app.Api\
+2023-12-19 11:32:54.169 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/index.html - -
+2023-12-19 11:32:54.800 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - -
+2023-12-19 11:32:54.803 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/index.html - - - 200 - text/html;charset=utf-8 637.9845ms
+2023-12-19 11:32:54.834 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 23.7175ms
+2023-12-19 11:32:54.959 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_vs/browserLink - -
+2023-12-19 11:32:55.039 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.7848ms
+2023-12-19 11:32:55.106 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - -
+2023-12-19 11:32:55.384 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 277.7251ms
+2023-12-19 11:34:48.803 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44350/Permissions application/json 139
+2023-12-19 11:34:48.863 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-19 11:34:48.933 -03:00 [INF] Route matched with {action = "Create", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[n5.Application.DTOs.PermissionDto]] Create(n5.Application.Commands.CreatePermissionCommand) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-19 11:34:49.964 -03:00 [INF] Entity Framework Core 6.0.0 initialized 'n5DbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.0' with options: StoreName=PermissionDb 
+2023-12-19 11:34:50.260 -03:00 [INF] Saved 1 entities to in-memory store.
+2023-12-19 11:34:50.276 -03:00 [INF] Method Create Permission - Created permission Ok
+2023-12-19 11:34:52.652 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'n5.Application.DTOs.PermissionDto'.
+2023-12-19 11:34:52.676 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.Create (n5app.Api) in 3738.6289ms
+2023-12-19 11:34:52.679 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-19 11:34:52.685 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-19 11:34:52.743 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44350/Permissions application/json 139 - 500 - text/plain;+charset=utf-8 3941.4054ms
+2023-12-20 14:03:21.721 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-20 14:03:21.739 -03:00 [INF] Hosting environment: Development
+2023-12-20 14:03:21.741 -03:00 [INF] Content root path: C:\repo\githubworkflowB\n5backend\n5app.Api\
+2023-12-20 14:03:21.747 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/index.html - -
+2023-12-20 14:03:22.157 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/index.html - - - 200 - text/html;charset=utf-8 413.4286ms
+2023-12-20 14:03:22.394 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - -
+2023-12-20 14:03:22.405 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 5.2512ms
+2023-12-20 14:03:22.412 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_vs/browserLink - -
+2023-12-20 14:03:22.456 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.7675ms
+2023-12-20 14:03:22.584 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - -
+2023-12-20 14:03:22.689 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.5642ms
+2023-12-20 14:04:13.815 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44350/Permissions application/json 139
+2023-12-20 14:04:13.832 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:04:13.888 -03:00 [INF] Route matched with {action = "Create", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[n5.Application.DTOs.PermissionDto]] Create(n5.Application.Commands.CreatePermissionCommand) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:04:14.795 -03:00 [INF] Entity Framework Core 6.0.0 initialized 'n5DbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.0' with options: StoreName=PermissionDb 
+2023-12-20 14:04:15.020 -03:00 [INF] Saved 1 entities to in-memory store.
+2023-12-20 14:04:15.037 -03:00 [INF] Method Create Permission - Created permission Ok
+2023-12-20 14:04:17.460 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'n5.Application.DTOs.PermissionDto'.
+2023-12-20 14:04:17.491 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.Create (n5app.Api) in 3595.73ms
+2023-12-20 14:04:17.494 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:04:17.501 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-20 14:04:17.561 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44350/Permissions application/json 139 - 500 - text/plain;+charset=utf-8 3746.9705ms
+2023-12-20 14:04:23.355 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions - -
+2023-12-20 14:04:23.355 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:04:23.358 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions() on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:04:27.714 -03:00 [INF] Method Get Permission - Ok
+2023-12-20 14:04:44.435 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[n5.Application.DTOs.PermissionDto, n5.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-20 14:04:44.447 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api) in 21088.3687ms
+2023-12-20 14:04:44.448 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:04:44.449 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/Permissions - - - 200 - application/json;+charset=utf-8 21093.8921ms
+2023-12-20 14:04:49.389 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions - -
+2023-12-20 14:04:49.389 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:04:49.389 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions() on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:04:53.487 -03:00 [INF] Method Get Permission - Ok
+2023-12-20 14:05:47.527 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-20 14:05:47.544 -03:00 [INF] Hosting environment: Development
+2023-12-20 14:05:47.547 -03:00 [INF] Content root path: C:\repo\githubworkflowB\n5backend\n5app.Api\
+2023-12-20 14:05:47.547 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/index.html - -
+2023-12-20 14:05:47.943 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/index.html - - - 200 - text/html;charset=utf-8 400.1848ms
+2023-12-20 14:05:47.944 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - -
+2023-12-20 14:05:47.964 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 13.1483ms
+2023-12-20 14:05:48.068 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_vs/browserLink - -
+2023-12-20 14:05:48.123 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.0354ms
+2023-12-20 14:05:48.188 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - -
+2023-12-20 14:05:48.309 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.8467ms
+2023-12-20 14:06:00.938 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44350/Permissions application/json 139
+2023-12-20 14:06:00.950 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:06:01.000 -03:00 [INF] Route matched with {action = "Create", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[n5.Application.DTOs.PermissionDto]] Create(n5.Application.Commands.CreatePermissionCommand) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:06:01.884 -03:00 [INF] Entity Framework Core 6.0.0 initialized 'n5DbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.0' with options: StoreName=PermissionDb 
+2023-12-20 14:06:02.093 -03:00 [INF] Saved 1 entities to in-memory store.
+2023-12-20 14:06:02.105 -03:00 [INF] Method Create Permission - Created permission Ok
+2023-12-20 14:06:05.608 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'n5.Application.DTOs.PermissionDto'.
+2023-12-20 14:06:05.633 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.Create (n5app.Api) in 4626.8426ms
+2023-12-20 14:06:05.637 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:06:05.641 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-20 14:06:05.685 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44350/Permissions application/json 139 - 500 - text/plain;+charset=utf-8 4746.1159ms
+2023-12-20 14:06:09.570 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions - -
+2023-12-20 14:06:09.571 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:06:09.574 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions() on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:06:09.600 -03:00 [INF] Entity Framework Core 6.0.0 initialized 'n5DbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.0' with options: StoreName=PermissionDb 
+2023-12-20 14:06:09.757 -03:00 [INF] Method Get Permission - Ok
+2023-12-20 14:06:13.084 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[n5.Domain.Entities.Permission, n5.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[n5.Application.DTOs.PermissionDto, n5.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-20 14:06:13.098 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api) in 3524.2013ms
+2023-12-20 14:06:13.098 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:06:13.098 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/Permissions - - - 200 - application/json;+charset=utf-8 3528.2061ms
+2023-12-20 14:16:12.598 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-20 14:16:12.614 -03:00 [INF] Hosting environment: Development
+2023-12-20 14:16:12.616 -03:00 [INF] Content root path: C:\repo\githubworkflowB\n5backend\n5app.Api\
+2023-12-20 14:16:12.617 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/index.html - -
+2023-12-20 14:16:13.250 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - -
+2023-12-20 14:16:13.254 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/index.html - - - 200 - text/html;charset=utf-8 640.7576ms
+2023-12-20 14:16:13.266 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 13.7211ms
+2023-12-20 14:16:13.405 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_vs/browserLink - -
+2023-12-20 14:16:13.482 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 77.5560ms
+2023-12-20 14:16:13.549 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - -
+2023-12-20 14:16:13.690 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 140.8683ms
+2023-12-20 14:16:25.876 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44350/Permissions application/json 139
+2023-12-20 14:16:25.889 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:16:25.935 -03:00 [INF] Route matched with {action = "Create", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[n5.Application.DTOs.PermissionDto]] Create(n5.Application.Commands.CreatePermissionCommand) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:16:26.816 -03:00 [INF] Entity Framework Core 6.0.0 initialized 'n5DbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.0' with options: StoreName=PermissionDb 
+2023-12-20 14:16:27.027 -03:00 [INF] Saved 1 entities to in-memory store.
+2023-12-20 14:16:27.048 -03:00 [INF] Method Create Permission - Created permission Ok
+2023-12-20 14:16:29.181 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'n5.Application.DTOs.PermissionDto'.
+2023-12-20 14:16:29.202 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.Create (n5app.Api) in 3262.2005ms
+2023-12-20 14:16:29.204 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:16:29.208 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-20 14:16:29.258 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44350/Permissions application/json 139 - 500 - text/plain;+charset=utf-8 3382.4195ms
+2023-12-20 14:16:36.613 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions - -
+2023-12-20 14:16:36.613 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:16:36.628 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions(System.String) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:16:36.636 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-12-20 14:16:36.652 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api) in 23.9932ms
+2023-12-20 14:16:36.653 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:16:36.653 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/Permissions - - - 400 - application/problem+json;+charset=utf-8 39.6795ms
+2023-12-20 14:16:38.036 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions - -
+2023-12-20 14:16:38.036 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:16:38.037 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions(System.String) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:16:38.037 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-12-20 14:16:38.038 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api) in 1.3159ms
+2023-12-20 14:16:38.038 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:16:38.038 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/Permissions - - - 400 - application/problem+json;+charset=utf-8 2.2035ms
+2023-12-20 14:16:38.819 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions - -
+2023-12-20 14:16:38.820 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:16:38.820 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions(System.String) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:16:38.820 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-12-20 14:16:38.820 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api) in 0.6431ms
+2023-12-20 14:16:38.820 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:16:38.826 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/Permissions - - - 400 - application/problem+json;+charset=utf-8 1.6452ms
+2023-12-20 14:16:40.009 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions - -
+2023-12-20 14:16:40.009 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:16:40.009 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions(System.String) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:16:40.010 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-12-20 14:16:40.010 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api) in 0.542ms
+2023-12-20 14:16:40.010 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:16:40.010 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/Permissions - - - 400 - application/problem+json;+charset=utf-8 1.1157ms
+2023-12-20 14:16:44.315 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions?SearchTerm=ssss - -
+2023-12-20 14:16:44.315 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:16:44.315 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions(System.String) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:17:55.627 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-20 14:17:55.648 -03:00 [INF] Hosting environment: Development
+2023-12-20 14:17:55.651 -03:00 [INF] Content root path: C:\repo\githubworkflowB\n5backend\n5app.Api\
+2023-12-20 14:17:55.658 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/index.html - -
+2023-12-20 14:17:56.198 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - -
+2023-12-20 14:17:56.201 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/index.html - - - 200 - text/html;charset=utf-8 551.1459ms
+2023-12-20 14:17:56.212 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 11.8502ms
+2023-12-20 14:17:56.295 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_vs/browserLink - -
+2023-12-20 14:17:56.409 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 114.0634ms
+2023-12-20 14:17:56.451 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - -
+2023-12-20 14:17:56.570 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.2657ms
+2023-12-20 14:18:08.725 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44350/Permissions application/json 135
+2023-12-20 14:18:08.737 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:18:08.795 -03:00 [INF] Route matched with {action = "Create", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[n5.Application.DTOs.PermissionDto]] Create(n5.Application.Commands.CreatePermissionCommand) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:18:09.724 -03:00 [INF] Entity Framework Core 6.0.0 initialized 'n5DbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.0' with options: StoreName=PermissionDb 
+2023-12-20 14:18:09.942 -03:00 [INF] Saved 1 entities to in-memory store.
+2023-12-20 14:18:09.965 -03:00 [INF] Method Create Permission - Created permission Ok
+2023-12-20 14:18:12.288 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'n5.Application.DTOs.PermissionDto'.
+2023-12-20 14:18:12.314 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.Create (n5app.Api) in 3511.2845ms
+2023-12-20 14:18:12.319 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:18:12.326 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-20 14:18:12.384 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44350/Permissions application/json 135 - 500 - text/plain;+charset=utf-8 3658.1310ms
+2023-12-20 14:18:17.973 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions - -
+2023-12-20 14:18:17.974 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:18:17.977 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions(System.String) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:18:17.982 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-12-20 14:18:17.997 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api) in 19.8414ms
+2023-12-20 14:18:17.997 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:18:17.998 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/Permissions - - - 400 - application/problem+json;+charset=utf-8 24.2573ms
+2023-12-20 14:18:21.003 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions?SearchTerm=2 - -
+2023-12-20 14:18:21.003 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:18:21.004 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions(System.String) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:18:35.510 -03:00 [INF] Method Get Permission - Ok
+2023-12-20 14:25:19.457 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-20 14:25:19.475 -03:00 [INF] Hosting environment: Development
+2023-12-20 14:25:19.477 -03:00 [INF] Content root path: C:\repo\githubworkflowB\n5backend\n5app.Api\
+2023-12-20 14:25:19.482 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/index.html - -
+2023-12-20 14:25:19.900 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - -
+2023-12-20 14:25:19.903 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/index.html - - - 200 - text/html;charset=utf-8 425.8645ms
+2023-12-20 14:25:19.920 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 14.8619ms
+2023-12-20 14:25:20.008 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/_vs/browserLink - -
+2023-12-20 14:25:20.054 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.1014ms
+2023-12-20 14:25:20.116 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - -
+2023-12-20 14:25:20.231 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.3769ms
+2023-12-20 14:25:35.112 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44350/Permissions application/json 140
+2023-12-20 14:25:35.125 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:25:35.165 -03:00 [INF] Route matched with {action = "Create", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[n5.Application.DTOs.PermissionDto]] Create(n5.Application.Commands.CreatePermissionCommand) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:25:36.020 -03:00 [INF] Entity Framework Core 6.0.0 initialized 'n5DbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.0' with options: StoreName=PermissionDb 
+2023-12-20 14:25:36.241 -03:00 [INF] Saved 1 entities to in-memory store.
+2023-12-20 14:25:36.262 -03:00 [INF] Method Create Permission - Created permission Ok
+2023-12-20 14:25:41.317 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'n5.Application.DTOs.PermissionDto'.
+2023-12-20 14:25:41.343 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.Create (n5app.Api) in 6171.6362ms
+2023-12-20 14:25:41.346 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.Create (n5app.Api)'
+2023-12-20 14:25:41.352 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.ObjectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-20 14:25:41.402 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44350/Permissions application/json 140 - 500 - text/plain;+charset=utf-8 6290.4637ms
+2023-12-20 14:25:47.141 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44350/Permissions - -
+2023-12-20 14:25:47.142 -03:00 [INF] Executing endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:25:47.153 -03:00 [INF] Route matched with {action = "GetPermissions", controller = "Permissions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[n5.Application.DTOs.PermissionDto]]] GetPermissions(Boolean) on controller n5app.Api.Controllers.PermissionsController (n5app.Api).
+2023-12-20 14:25:47.181 -03:00 [INF] Entity Framework Core 6.0.0 initialized 'n5DbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.0' with options: StoreName=PermissionDb 
+2023-12-20 14:25:47.314 -03:00 [INF] Method Get Permission - Ok
+2023-12-20 14:25:50.626 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[n5.Domain.Entities.Permission, n5.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[n5.Application.DTOs.PermissionDto, n5.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-20 14:25:50.641 -03:00 [INF] Executed action n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api) in 3487.867ms
+2023-12-20 14:25:50.642 -03:00 [INF] Executed endpoint 'n5app.Api.Controllers.PermissionsController.GetPermissions (n5app.Api)'
+2023-12-20 14:25:50.642 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44350/Permissions - - - 200 - application/json;+charset=utf-8 3500.6390ms

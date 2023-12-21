@@ -1,0 +1,15 @@
+﻿
+namespace n5.Domain.Entities
+{
+    public class Permission
+    {
+        public int Id { get; set; }
+        public string EmployeeForeName { get; set; }
+        public string EmployeeSureName { get; set; }
+        public int PermissionType { get; set; }
+        public DateTime PermissionDate { get; set; }
+        
+    }
+
+    
+}
