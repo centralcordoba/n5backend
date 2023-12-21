@@ -9,6 +9,6 @@ using System.Threading.Tasks;
 namespace n5.Application.Commands
 {
     public record UpdatePermissionCommand (int Id, string EmployeeForeName, string EmployeeSureName,
-        int PermissionType, DateTime PermissionDate) : IRequest<PermissionDto>;
+        int IdPermissionType, DateTime PermissionDate) : IRequest<PermissionDto>;
     
 }

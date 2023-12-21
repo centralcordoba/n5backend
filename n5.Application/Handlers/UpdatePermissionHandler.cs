@@ -26,7 +26,7 @@ namespace n5.Application.Handlers
 
             permissionItem.EmployeeSureName = request.EmployeeSureName;
             permissionItem.EmployeeForeName = request.EmployeeForeName;
-            permissionItem.PermissionType = request.PermissionType;
+            permissionItem.IdPermissionType = request.IdPermissionType;
             permissionItem.PermissionDate = request.PermissionDate; 
             await _dbContext.SaveChangesAsync(cancellationToken);
 
@@ -35,7 +35,7 @@ namespace n5.Application.Handlers
                 Id = permissionItem.Id,
                 EmployeeForeName = permissionItem.EmployeeForeName,
                 EmployeeSureName = permissionItem.EmployeeSureName,
-                PermissionType = permissionItem.PermissionType,
+                IdPermissionType = permissionItem.IdPermissionType,
                 PermissionDate = permissionItem.PermissionDate
             };
 

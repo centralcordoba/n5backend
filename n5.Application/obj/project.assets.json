@@ -909,11 +909,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repo\\githubworkflowB\\n5backend\\n5.Application\\n5.Application.csproj",
+      "projectUniqueName": "C:\\backendext\\n5backend\\n5.Application\\n5.Application.csproj",
       "projectName": "n5.Application",
-      "projectPath": "C:\\repo\\githubworkflowB\\n5backend\\n5.Application\\n5.Application.csproj",
+      "projectPath": "C:\\backendext\\n5backend\\n5.Application\\n5.Application.csproj",
       "packagesPath": "C:\\Users\\Emmanuel jimenez\\.nuget\\packages\\",
-      "outputPath": "C:\\repo\\githubworkflowB\\n5backend\\n5.Application\\obj\\",
+      "outputPath": "C:\\backendext\\n5backend\\n5.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -936,8 +936,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\repo\\githubworkflowB\\n5backend\\n5.Infrastructure\\n5.Infrastructure.csproj": {
-              "projectPath": "C:\\repo\\githubworkflowB\\n5backend\\n5.Infrastructure\\n5.Infrastructure.csproj"
+            "C:\\backendext\\n5backend\\n5.Infrastructure\\n5.Infrastructure.csproj": {
+              "projectPath": "C:\\backendext\\n5backend\\n5.Infrastructure\\n5.Infrastructure.csproj"
             }
           }
         }

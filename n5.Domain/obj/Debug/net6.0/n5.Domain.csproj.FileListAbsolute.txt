@@ -10,3 +10,15 @@ C:\repo\githubworkflowB\n5backend\n5.Domain\obj\Debug\net6.0\n5.Domain.dll
 C:\repo\githubworkflowB\n5backend\n5.Domain\obj\Debug\net6.0\refint\n5.Domain.dll
 C:\repo\githubworkflowB\n5backend\n5.Domain\obj\Debug\net6.0\n5.Domain.pdb
 C:\repo\githubworkflowB\n5backend\n5.Domain\obj\Debug\net6.0\ref\n5.Domain.dll
+C:\backendext\n5backend\n5.Domain\bin\Debug\net6.0\n5.Domain.deps.json
+C:\backendext\n5backend\n5.Domain\bin\Debug\net6.0\n5.Domain.dll
+C:\backendext\n5backend\n5.Domain\bin\Debug\net6.0\n5.Domain.pdb
+C:\backendext\n5backend\n5.Domain\obj\Debug\net6.0\n5.Domain.csproj.AssemblyReference.cache
+C:\backendext\n5backend\n5.Domain\obj\Debug\net6.0\n5.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\backendext\n5backend\n5.Domain\obj\Debug\net6.0\n5.Domain.AssemblyInfoInputs.cache
+C:\backendext\n5backend\n5.Domain\obj\Debug\net6.0\n5.Domain.AssemblyInfo.cs
+C:\backendext\n5backend\n5.Domain\obj\Debug\net6.0\n5.Domain.csproj.CoreCompileInputs.cache
+C:\backendext\n5backend\n5.Domain\obj\Debug\net6.0\n5.Domain.dll
+C:\backendext\n5backend\n5.Domain\obj\Debug\net6.0\refint\n5.Domain.dll
+C:\backendext\n5backend\n5.Domain\obj\Debug\net6.0\n5.Domain.pdb
+C:\backendext\n5backend\n5.Domain\obj\Debug\net6.0\ref\n5.Domain.dll

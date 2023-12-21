@@ -22,7 +22,7 @@ namespace n5.Application.Handlers
             {
                 EmployeeForeName = request.EmployeeForeName,
                 EmployeeSureName = request.EmployeeSureName,
-                PermissionType = request.PermissionType,
+                IdPermissionType = request.IdPermissionType,
                 PermissionDate = request.PermissionDate
             };
 
@@ -34,7 +34,7 @@ namespace n5.Application.Handlers
                 Id = permissionItem.Id,
                 EmployeeForeName = permissionItem.EmployeeForeName,
                 EmployeeSureName = permissionItem.EmployeeSureName,
-                PermissionType = permissionItem.PermissionType,
+                IdPermissionType = permissionItem.IdPermissionType,
                 PermissionDate = permissionItem.PermissionDate
             };
 

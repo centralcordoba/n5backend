@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repo\\githubworkflowB\\n5backend\\n5.Domain\\n5.Domain.csproj",
+      "projectUniqueName": "C:\\backendext\\n5backend\\n5.Domain\\n5.Domain.csproj",
       "projectName": "n5.Domain",
-      "projectPath": "C:\\repo\\githubworkflowB\\n5backend\\n5.Domain\\n5.Domain.csproj",
+      "projectPath": "C:\\backendext\\n5backend\\n5.Domain\\n5.Domain.csproj",
       "packagesPath": "C:\\Users\\Emmanuel jimenez\\.nuget\\packages\\",
-      "outputPath": "C:\\repo\\githubworkflowB\\n5backend\\n5.Domain\\obj\\",
+      "outputPath": "C:\\backendext\\n5backend\\n5.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

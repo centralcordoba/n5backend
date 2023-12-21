@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6LlWVYTBbBSiGEI3g8+5LWoWmJPeBhEv8lrqToJf8VSoRQhY0q9LbG9IqIzU6PbTnrQcfVsjYg63/Aierb+Cuw==",
+  "dgSpecHash": "odjdlrc0PK5J7IXKHlcIllpGjsPVOihE5iX9JtxH/TM+KjRSd2RpfY0ABlX9+7AXRw48CfgB++KeocItH/ycEA==",
   "success": true,
-  "projectFilePath": "C:\\repo\\githubworkflowB\\n5backend\\n5.Domain\\n5.Domain.csproj",
+  "projectFilePath": "C:\\backendext\\n5backend\\n5.Domain\\n5.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

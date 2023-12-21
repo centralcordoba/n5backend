@@ -51,7 +51,7 @@ namespace n5.Application.Handlers
                     EmployeeForeName = permission.EmployeeForeName,
                     EmployeeSureName = permission.EmployeeSureName,
                     PermissionDate = permission.PermissionDate,
-                    PermissionType = permission.PermissionType
+                    IdPermissionType = permission.IdPermissionType
 
                 });
             }
